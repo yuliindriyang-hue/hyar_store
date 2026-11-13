@@ -1,0 +1,471 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#061b46">
+
+  <title>HYAR STORE | Rental Free Fire</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- INTRO LOADING -->
+  <div id="intro">
+    <div class="intro-content">
+      <img src="Fotoprofile.jpg" alt="Logo HYAR STORE" class="intro-logo">
+      <h1>HYAR STORE</h1>
+      <p>PREMIUM FREE FIRE RENTAL</p>
+
+      <div class="loading-line">
+        <div class="loading-progress"></div>
+      </div>
+
+      <span>WELCOME TO HYAR STORE</span>
+    </div>
+  </div>
+
+  <!-- REGISTRASI -->
+  <section id="register-page">
+    <div class="register-box">
+      <img src="Fotoprofile.jpg" alt="Logo HYAR STORE">
+
+      <h1>HYAR STORE</h1>
+      <p>Silakan masukkan nama untuk masuk</p>
+
+      <form id="register-form">
+        <input
+          type="text"
+          id="customer-name"
+          placeholder="Masukkan nama kamu..."
+          required
+        >
+
+        <button type="submit">
+          MASUK SEKARANG
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- WEBSITE UTAMA -->
+  <main id="main-page">
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+      <div class="brand">
+        <img src="Fotoprofile.jpg" alt="Logo">
+        <div>
+          <h2>HYAR STORE</h2>
+          <span>PREMIUM RENTAL FF</span>
+        </div>
+      </div>
+
+      <button id="menu-button" aria-label="Buka menu">☰</button>
+
+      <nav id="navigation">
+        <a href="#home">Home</a>
+        <a href="#rental">Rental</a>
+        <a href="#payment">Payment</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="hero-text">
+        <span class="hero-label">WELCOME TO PREMIUM STORE</span>
+
+        <h1>
+          RENTAL FREE FIRE
+          <span>HYAR STORE</span>
+        </h1>
+
+        <p>
+          Temukan akun Free Fire pilihanmu dengan harga
+          terjangkau dan pelayanan yang mudah.
+        </p>
+
+        <a href="#rental" class="hero-button">
+          LIHAT AKUN RENTAL
+        </a>
+
+        <div class="hero-info">
+          <div>
+            <strong>11+</strong>
+            <span>Akun Rental</span>
+          </div>
+
+          <div>
+            <strong>24/7</strong>
+            <span>Order Online</span>
+          </div>
+
+          <div>
+            <strong>FAST</strong>
+            <span>Response</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <img src="contoh.jpg" alt="Preview akun rental Free Fire">
+      </div>
+    </section>
+
+    <!-- INFORMASI -->
+    <section class="section-info">
+      <div class="info-card">
+        <span>01</span>
+        <h3>PILIH AKUN</h3>
+        <p>Pilih akun rental yang tersedia.</p>
+      </div>
+
+      <div class="info-card">
+        <span>02</span>
+        <h3>PESAN RENTAL</h3>
+        <p>Hubungi admin melalui WhatsApp.</p>
+      </div>
+
+      <div class="info-card">
+        <span>03</span>
+        <h3>KONFIRMASI</h3>
+        <p>Ikuti petunjuk transaksi dari admin.</p>
+      </div>
+    </section>
+
+    <!-- DAFTAR RENTAL -->
+    <section id="rental" class="rental-section">
+      <div class="section-heading">
+        <span>OUR COLLECTION</span>
+        <h2>DAFTAR AKUN RENTAL</h2>
+        <p>Pilih akun Free Fire yang kamu inginkan.</p>
+      </div>
+
+      <div id="rental-container" class="rental-grid">
+
+        <!-- AKUN 1 -->
+        <article class="rental-card">
+          <div class="account-image">
+            <img src="rentalanke1.jpg" alt="Akun Rental 1">
+            <span class="account-number">AKUN 01</span>
+          </div>
+          <div class="account-details">
+            <h3>RENTAL AKUN 01</h3>
+            <p>Premium Free Fire Account</p>
+            <div class="price-list">
+              <span>1 Jam <b>Rp17.000</b></span>
+              <span>2 Jam <b>Rp19.000</b></span>
+              <span>3 Jam <b>Rp28.000</b></span>
+              <span>4 Jam <b>Rp29.000</b></span>
+              <span>6 Jam <b>Rp38.000</b></span>
+              <span>School <b>Rp45.000</b></span>
+              <span>Night <b>Rp45.000</b></span>
+              <span>1 Hari <b>Rp58.000</b></span>
+              <span>2 Hari <b>Rp110.000</b></span>
+            </div>
+            <button class="rent-button" onclick="orderRental(1)">RENTAL SEKARANG</button>
+          </div>
+        </article>
+
+        <!-- AKUN 2 -->
+        <article class="rental-card">
+          <div class="account-image">
+            <img src="rentalan ke 2.jpg" alt="Akun Rental 2">
+            <span class="account-number">AKUN 02</span>
+          </div>
+          <div class="account-details">
+            <h3>RENTAL AKUN 02</h3>
+            <p>Premium Free Fire Account</p>
+            <div class="price-list">
+              <span>1 Jam <b>Rp16.000</b></span>
+              <span>2 Jam <b>Rp18.000</b></span>
+              <span>3 Jam <b>Rp28.000</b></span>
+              <span>4 Jam <b>Rp29.000</b></span>
+              <span>6 Jam <b>Rp39.000</b></span>
+              <span>School <b>Rp45.000</b></span>
+              <span>Night <b>Rp48.000</b></span>
+              <span>1 Hari <b>Rp58.000</b></span>
+              <span>2 Hari <b>Rp110.000</b></span>
+            </div>
+            <button class="rent-button" onclick="orderRental(2)">RENTAL SEKARANG</button>
+          </div>
+        </article>
+
+        <!-- AKUN 3 -->
+        <article class="rental-card">
+          <div class="account-image">
+            <img src="rentalan ke 3.jpg" alt="Akun Rental 3">
+            <span class="account-number">AKUN 03</span>
+          </div>
+          <div class="account-details">
+            <h3>RENTAL AKUN 03</h3>
+            <p>Premium Free Fire Account</p>
+            <div class="price-list">
+              <span>1 Jam <b>Rp14.000</b></span>
+              <span>2 Jam <b>Rp17.000</b></span>
+              <span>3 Jam <b>Rp19.000</b></span>
+              <span>4 Jam <b>Rp28.000</b></span>
+              <span>6 Jam <b>Rp29.000</b></span>
+              <span>School <b>Rp38.000</b></span>
+              <span>Night <b>Rp38.000</b></span>
+              <span>1 Hari <b>Rp50.000</b></span>
+              <span>2 Hari <b>Rp98.000</b></span>
+            </div>
+            <button class="rent-button" onclick="orderRental(3)">RENTAL SEKARANG</button>
+          </div>
+        </article>
+
+        <!-- AKUN 4 -->
+        <article class="rental-card">
+          <div class="account-image">
+            <img src="rentalan ke 4.jpg" alt="Akun Rental 4">
+            <span class="account-number">AKUN 04</span>
+          </div>
+          <div class="account-details">
+            <h3>RENTAL AKUN 04</h3>
+            <p>Premium Free Fire Account</p>
+            <div class="price-list">
+              <span>1 Jam <b>Rp14.000</b></span>
+              <span>2 Jam <b>Rp16.000</b></span>
+              <span>3 Jam <b>Rp19.000</b></span>
+              <span>4 Jam <b>Rp28.000</b></span>
+              <span>6 Jam <b>Rp29.000</b></span>
+              <span>School <b>Rp38.000</b></span>
+              <span>Night <b>Rp38.000</b></span>
+              <span>1 Hari <b>Rp50.000</b></span>
+              <span>2 Hari <b>Rp96.000</b></span>
+            </div>
+            <button class="rent-button" onclick="orderRental(4)">RENTAL SEKARANG</button>
+          </div>
+        </article>
+
+        <!-- AKUN 5 -->
+        <article class="rental-card">
+          <div class="account-image">
+            <img src="rentalan ke 5.jpg" alt="Akun Rental 5">
+            <span class="account-number">AKUN 05</span>
+          </div>
+          <div class="account-details">
+            <h3>RENTAL AKUN 05</h3>
+            <p>Premium Free Fire Account</p>
+            <div class="price-list">
+              <span>1 Jam <b>Rp14.000</b></span>
+              <span>2 Jam <b>Rp17.000</b></span>
+              <span>3 Jam <b>Rp19.000</b></span>
+              <span>4 Jam <b>Rp28.000</b></span>
+              <span>6 Jam <b>Rp29.000</b></span>
+              <span>School <b>Rp39.000</b></span>
+              <span>Night <b>Rp38.000</b></span>
+              <span>1 Hari <b>Rp50.000</b></span>
+              <span>2 Hari <b>Rp100.000</b></span>
+            </div>
+            <button class="rent-button" onclick="orderRental(5)">RENTAL SEKARANG</button>
+          </div>
+        </article>
+
+        <!-- AKUN 6 -->
+        <article class="rental-card">
+          <div class="account-image">
+            <img src="rentalan ke 6.jpg" alt="Akun Rental 6">
+            <span class="account-number">AKUN 06</span>
+          </div>
+          <div class="account-details">
+            <h3>RENTAL AKUN 06</h3>
+            <p>Premium Free Fire Account</p>
+            <div class="price-list">
+              <span>1 Jam <b>Rp16.000</b></span>
+              <span>2 Jam <b>Rp18.000</b></span>
+              <span>3 Jam <b>Rp26.000</b></span>
+              <span>4 Jam <b>Rp28.000</b></span>
+              <span>6 Jam <b>Rp37.000</b></span>
+              <span>School <b>Rp48.000</b></span>
+              <span>Night <b>Rp48.000</b></span>
+              <span>1 Hari <b>Rp58.000</b></span>
+              <span>2 Hari <b>Rp110.000</b></span>
+            </div>
+            <button class="rent-button" onclick="orderRental(6)">RENTAL SEKARANG</button>
+          </div>
+        </article>
+
+        <!-- AKUN 7 -->
+        <article class="rental-card">
+          <div class="account-image">
+            <img src="rentalan ke 7.jpg" alt="Akun Rental 7">
+            <span class="account-number">AKUN 07</span>
+          </div>
+          <div class="account-details">
+            <h3>RENTAL AKUN 07</h3>
+            <p>Premium Free Fire Account</p>
+            <div class="price-list">
+              <span>1 Jam <b>Rp15.000</b></span>
+              <span>2 Jam <b>Rp18.000</b></span>
+              <span>3 Jam <b>Rp25.000</b></span>
+              <span>4 Jam <b>Rp28.000</b></span>
+              <span>6 Jam <b>Rp36.000</b></span>
+              <span>School <b>Rp45.000</b></span>
+              <span>Night <b>Rp46.000</b></span>
+              <span>1 Hari <b>Rp57.000</b></span>
+              <span>2 Hari <b>Rp108.000</b></span>
+            </div>
+            <button class="rent-button" onclick="orderRental(7)">RENTAL SEKARANG</button>
+          </div>
+        </article>
+
+        <!-- AKUN 8 -->
+        <article class="rental-card">
+          <div class="account-image">
+            <img src="rentalan ke 8.jpg" alt="Akun Rental 8">
+            <span class="account-number">AKUN 08</span>
+          </div>
+          <div class="account-details">
+            <h3>RENTAL AKUN 08</h3>
+            <p>Premium Free Fire Account</p>
+            <div class="price-list">
+              <span>1 Jam <b>Rp13.000</b></span>
+              <span>2 Jam <b>Rp16.000</b></span>
+              <span>3 Jam <b>Rp19.000</b></span>
+              <span>4 Jam <b>Rp26.000</b></span>
+              <span>6 Jam <b>Rp29.000</b></span>
+              <span>School <b>Rp38.000</b></span>
+              <span>Night <b>Rp39.000</b></span>
+              <span>1 Hari <b>Rp45.000</b></span>
+              <span>2 Hari <b>Rp96.000</b></span>
+            </div>
+            <button class="rent-button" onclick="orderRental(8)">RENTAL SEKARANG</button>
+          </div>
+        </article>
+
+        <!-- AKUN 9 -->
+        <article class="rental-card">
+          <div class="account-image">
+            <img src="rentalan ke 9.jpg" alt="Akun Rental 9">
+            <span class="account-number">AKUN 09</span>
+          </div>
+          <div class="account-details">
+            <h3>RENTAL AKUN 09</h3>
+            <p>Premium Free Fire Account</p>
+            <div class="price-list">
+              <span>1 Jam <b>Rp10.000</b></span>
+              <span>2 Jam <b>Rp13.000</b></span>
+              <span>3 Jam <b>Rp19.000</b></span>
+              <span>4 Jam <b>Rp25.000</b></span>
+              <span>6 Jam <b>Rp26.000</b></span>
+              <span>School <b>Rp34.000</b></span>
+              <span>Night <b>Rp35.000</b></span>
+              <span>1 Hari <b>Rp46.000</b></span>
+              <span>2 Hari <b>Rp87.000</b></span>
+            </div>
+            <button class="rent-button" onclick="orderRental(9)">RENTAL SEKARANG</button>
+          </div>
+        </article>
+
+        <!-- AKUN 10 -->
+        <article class="rental-card">
+          <div class="account-image">
+            <img src="rentalan ke 10.jpg" alt="Akun Rental 10">
+            <span class="account-number">AKUN 10</span>
+          </div>
+          <div class="account-details">
+            <h3>RENTAL AKUN 10</h3>
+            <p>Premium Free Fire Account</p>
+            <div class="price-list">
+              <span>1 Jam <b>Rp18.000</b></span>
+              <span>3 Jam <b>Rp38.000</b></span>
+              <span>6 Jam <b>Rp59.000</b></span>
+              <span>School <b>Rp65.000</b></span>
+              <span>Night <b>Rp65.000</b></span>
+              <span>1 Hari <b>Rp75.000</b></span>
+              <span>2 Hari <b>Rp145.000</b></span>
+            </div>
+            <button class="rent-button" onclick="orderRental(10)">RENTAL SEKARANG</button>
+          </div>
+        </article>
+
+        <!-- AKUN 11 -->
+        <article class="rental-card">
+          <div class="account-image">
+            <img src="rentalan ke 11.jpg" alt="Akun Rental 11">
+            <span class="account-number">AKUN 11</span>
+          </div>
+          <div class="account-details">
+            <h3>RENTAL AKUN 11</h3>
+            <p>Premium Free Fire Account</p>
+            <div class="price-list">
+              <span>1 Jam <b>Rp11.000</b></span>
+              <span>2 Jam <b>Rp15.000</b></span>
+              <span>3 Jam <b>Rp19.000</b></span>
+              <span>4 Jam <b>Rp24.000</b></span>
+              <span>6 Jam <b>Rp29.000</b></span>
+              <span>School <b>Rp40.000</b></span>
+              <span>Night <b>Rp40.000</b></span>
+              <span>1 Hari <b>Rp50.000</b></span>
+              <span>2 Hari <b>Rp95.000</b></span>
+            </div>
+            <button class="rent-button" onclick="orderRental(11)">RENTAL SEKARANG</button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- PAYMENT -->
+    <section id="payment" class="payment-section">
+      <div class="section-heading">
+        <span>SECURE PAYMENT</span>
+        <h2>METODE PEMBAYARAN</h2>
+        <p>Silakan konfirmasi pembayaran kepada admin.</p>
+      </div>
+
+      <div class="payment-box">
+        <div class="qr-image">
+          <img src="qrispoto.jpg" alt="QRIS HYAR STORE">
+        </div>
+
+        <div class="payment-details">
+          <h3>QRIS ALL PAYMENT</h3>
+          <p>Scan QRIS untuk melakukan pembayaran.</p>
+          <a href="https://wa.me/6287899233139" target="_blank">
+            KONFIRMASI PEMBAYARAN
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section">
+      <span>NEED HELP?</span>
+      <h2>HUBUNGI ADMIN</h2>
+      <p>Jika ada pertanyaan atau kendala rental, silakan hubungi admin.</p>
+
+      <a href="https://wa.me/6287899233139" target="_blank" class="contact-button">
+        WHATSAPP ADMIN
+      </a>
+    </section>
+
+    <!-- MUSIC -->
+    <div class="music-player">
+      <audio id="background-music" loop>
+        <source src="lagudj.mp3" type="audio/mpeg">
+      </audio>
+
+      <button id="music-button" type="button">
+        ♫ PLAY MUSIC
+      </button>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <h3>HYAR STORE</h3>
+      <p>PREMIUM FREE FIRE RENTAL</p>
+      <small>© 2026 HYAR STORE. All Rights Reserved.</small>
+    </footer>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
